@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class UtilidadesPersonaje {
 
 
-    public Personaje levelUp(Personaje personaje){
+    public static Personaje  levelUp(Personaje personaje){
 
         personaje.setNivel(personaje.getNivel()+1);
         personaje.setVida(personaje.getVidaBase() + personaje.getEscalabilidad().getIncrementoSaludNivel() * personaje.getNivel());
@@ -19,7 +19,7 @@ public class UtilidadesPersonaje {
         return personaje;
     }
 
-    public void levelTo(Personaje personaje, Integer nivelDeseado){
+    public static void levelTo(Personaje personaje, Integer nivelDeseado){
 
         personaje.setNivel(nivelDeseado);
         personaje.setVida(personaje.getVidaBase() + personaje.getEscalabilidad().getIncrementoSaludNivel() *nivelDeseado);

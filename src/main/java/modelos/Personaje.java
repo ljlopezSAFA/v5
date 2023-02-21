@@ -3,6 +3,7 @@ package modelos;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -26,8 +27,8 @@ public class Personaje {
     private Double vida;
     private Double mana;
     private Region region;
-    private List<Habilidad> habilidades;
-    private List<Item> equipamiento;
+    private List<Habilidad> habilidades = new ArrayList<>();
+    private List<Item> equipamiento = new ArrayList<>();
     private Escalabilidad escalabilidad;
 
 }
